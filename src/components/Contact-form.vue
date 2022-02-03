@@ -96,4 +96,15 @@ button:hover {
 .submit {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  form {
+    max-width: 80vw;
+    margin: 3rem auto;
+    background: white;
+    text-align: left;
+    padding: 2em;
+    border-radius: 10px;
+  }
+}
 </style>

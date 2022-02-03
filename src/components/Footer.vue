@@ -42,4 +42,18 @@ export default {
     margin-left: auto;
     margin-right: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    #footer .Inner {
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    #footer .Inner .logo {
+        width: 100vw !important;
+        margin-left: auto;
+        margin-right: 0;
+        padding-bottom: 2em;
+    }
+}
 </style>

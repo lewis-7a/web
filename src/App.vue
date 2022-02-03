@@ -110,4 +110,12 @@ section {
   color: white;
   text-align: left;
 }
+@media only screen and (max-width: 600px) {
+  section {
+    width: 80vw;
+  }
+  .Inner {
+    width: 80vw;
+  }
+}
 </style>

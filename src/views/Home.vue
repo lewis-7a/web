@@ -3,12 +3,12 @@
 
     <section class="Intro">
       <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 col-xs-12">
         <h2>Welcome</h2>
         <p>Have you ever wondered what it would be like if a local taxi company had an app just as good as uber? Or a local deli had an online shop that rivals any major super markets?</p>
         <p>We're on a mission of empowering small businesses to deliver amazing customer experiences through the use of business focused technology.</p>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-4 col-xs-12">
         <div class="in-img"><img src="../assets/rocket-laptop.svg" alt="" /></div>
       </div>
       </div>
@@ -17,7 +17,7 @@
     <section class="Features">
       <div class="row">
         <h2>Why us?</h2>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Feature-Item">
             <div class="f-img"><img src="../assets/entrapenuerial.png" alt="" /></div>
             <div class="f-info">
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Feature-Item">
             <div class="f-img"><img src="../assets/business.png" alt="" /></div>
             <div class="f-info">
@@ -35,7 +35,7 @@
               </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Feature-Item">
             <div class="f-img"><img src="../assets/technology.png" alt="" /></div>
             <div class="f-info">
@@ -44,7 +44,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Feature-Item">
             <div class="f-img"><img src="../assets/vision.png" alt="" /></div>
             <div class="f-info">
@@ -59,7 +59,7 @@
     <section class="Pricing">
       <div class="row">
         <h2>Our Pricing</h2>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Pricing-Item">
             <div class="p-info">
               <span>Fixed monthly cost</span>
@@ -68,7 +68,7 @@
             <div class="p-img"><img src="../assets/idea.svg" alt="" /></div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Pricing-Item">
             <div class="p-info">
               <span>Low up front costs</span>
@@ -77,7 +77,7 @@
             <div class="p-img"><img src="../assets/rocket-laptop.svg" alt="" /></div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Pricing-Item">
             <div class="p-info">
               <span>Short contract periods</span>
@@ -86,7 +86,7 @@
             <div class="p-img"><img src="../assets/agreement.svg" alt="" /></div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12">
           <div class="Pricing-Item">
             <div class="p-info">
               <span>Flexibility in mind</span>
@@ -100,13 +100,13 @@
 
     <section class="Contact">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8 col-xs-12">
           <h2>Contact us</h2>
           <p>No matter the need, we can cover it.</p>
           <p>If you'd like to work with us give us a call on <a href="tel:07855555555">+447855555555</a></p>
           <p>Or use our handy contact form <a href="/contact">here</a></p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 col-xs-12">
           <div class="in-img"><img src="../assets/contact.svg" alt="" /></div>
         </div>
       </div>
@@ -223,5 +223,15 @@ p {
     width: 50%;
     padding: 1em;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .col-xs-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 1em 0;
+  }
+  .in-img {
+    padding: 3em;
+  }
 }
 </style>
