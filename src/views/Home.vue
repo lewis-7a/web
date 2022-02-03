@@ -181,7 +181,7 @@ p {
 }
 .f-info span {
   padding: 0 1em;
-  font-size: 19px;
+  font-size: 19px; 
 }
 .f-info p {
   padding: 0 1em;
