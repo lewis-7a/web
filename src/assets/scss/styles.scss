@@ -1,0 +1,56 @@
+/* Basis of a color theme switcher */
+
+$theme: #e20388;
+$light-bg: #FFF;
+$dark-bg: #333;
+
+@mixin theme-colors($theme) {
+    @if $theme == 'light' {
+        background-color: $light-bg;
+    } @else {
+        background-color: $dark-bg;
+    }
+}
+
+/* Use of mixin to utilize later on. Typically used on repetitive CSS */
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    background: #333;
+}
+
+@mixin cool-button($color, $bg) {
+    display: flex;
+    color: $color;
+    background: $bg;
+}
+
+$red: hsl(0, 100%, 50%);
+$green: hsl(108, 100%, 50%);
+
+.btn {
+    @include flex-row;
+    .danger {
+        color: $red;
+        border: 1px solid $red;
+    }
+    .success {
+        color: $green;
+    }
+    &:focus { padding: 1em; }
+    &:hover { padding: 0 2em; }
+    &:active { background: $grey; }
+}
+
+.btn-orange {
+    @include cool-button(black, orange );
+}
+
+/* Array of values with a variable, then loop over them */
+$sizes: 40px, 50px, 80px;
+@each $size in $sizes {
+    .icon-#{$size} {
+        font-size: $size;
+    }
+}
